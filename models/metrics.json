@@ -1,0 +1,338 @@
+{
+  "dataset": "synthetic (make_synthetic.py)",
+  "n_train": 2400,
+  "n_test": 600,
+  "category": {
+    "accuracy": 0.9517,
+    "labels": [
+      "Account Access",
+      "Billing",
+      "Cancellation",
+      "Product Inquiry",
+      "Refund Request",
+      "Technical Issue"
+    ],
+    "confusion_matrix": [
+      [
+        95,
+        1,
+        1,
+        3,
+        2,
+        1
+      ],
+      [
+        1,
+        90,
+        1,
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        0,
+        90,
+        0,
+        2,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        100,
+        1,
+        1
+      ],
+      [
+        0,
+        2,
+        1,
+        3,
+        98,
+        0
+      ],
+      [
+        0,
+        2,
+        1,
+        0,
+        1,
+        98
+      ]
+    ],
+    "per_class": {
+      "Account Access": {
+        "precision": 0.9693877551020408,
+        "recall": 0.9223300970873787,
+        "f1-score": 0.945273631840796,
+        "support": 103.0
+      },
+      "Billing": {
+        "precision": 0.9375,
+        "recall": 0.9574468085106383,
+        "f1-score": 0.9473684210526315,
+        "support": 94.0
+      },
+      "Cancellation": {
+        "precision": 0.9574468085106383,
+        "recall": 0.967741935483871,
+        "f1-score": 0.9625668449197861,
+        "support": 93.0
+      },
+      "Product Inquiry": {
+        "precision": 0.9433962264150944,
+        "recall": 0.9615384615384616,
+        "f1-score": 0.9523809523809523,
+        "support": 104.0
+      },
+      "Refund Request": {
+        "precision": 0.9333333333333333,
+        "recall": 0.9423076923076923,
+        "f1-score": 0.937799043062201,
+        "support": 104.0
+      },
+      "Technical Issue": {
+        "precision": 0.9702970297029703,
+        "recall": 0.9607843137254902,
+        "f1-score": 0.9655172413793104,
+        "support": 102.0
+      },
+      "accuracy": 0.9516666666666667,
+      "macro avg": {
+        "precision": 0.9518935255106795,
+        "recall": 0.9520248847755887,
+        "f1-score": 0.9518176891059462,
+        "support": 600.0
+      },
+      "weighted avg": {
+        "precision": 0.9519411053508983,
+        "recall": 0.9516666666666667,
+        "f1-score": 0.9516600173047784,
+        "support": 600.0
+      }
+    }
+  },
+  "misclassified": [
+    {
+      "text": "To whom it may concern, someone may have hacked my account, I see unknown logins. please look into this. Please advise.",
+      "actual": "Billing",
+      "predicted": "Account Access"
+    },
+    {
+      "text": "Hello team, the payment page keeps failing when I try to update my card. I have a deadline tomorrow. Thank you for your help.",
+      "actual": "Refund Request",
+      "predicted": "Billing"
+    },
+    {
+      "text": "Hey, please refund my order, it arrived damaged. I have a deadline tomorrow.",
+      "actual": "Billing",
+      "predicted": "Refund Request"
+    },
+    {
+      "text": "Hey, the payment page keeps failing when I try to update my card. please look into this. Please advise.",
+      "actual": "Technical Issue",
+      "predicted": "Billing"
+    },
+    {
+      "text": "Hi, I returned the item two weeks ago and still have no refund. please respond as soon as possible.",
+      "actual": "Technical Issue",
+      "predicted": "Refund Request"
+    },
+    {
+      "text": "Hi, the sync feature stopped working after the update. I have a deadline tomorrow. Thank you for your help.",
+      "actual": "Product Inquiry",
+      "predicted": "Technical Issue"
+    },
+    {
+      "text": "To whom it may concern, my account was locked after several login attempts. when convenient, thanks.",
+      "actual": "Cancellation",
+      "predicted": "Account Access"
+    },
+    {
+      "text": "is this product compatible with my operating system. when convenient, thanks. Thanks.",
+      "actual": "Refund Request",
+      "predicted": "Product Inquiry"
+    },
+    {
+      "text": "To whom it may concern, the payment page keeps failing when I try to update my card. please look into this. Thanks.",
+      "actual": "Refund Request",
+      "predicted": "Billing"
+    },
+    {
+      "text": "the item was not as described, I would like my money back. when convenient, thanks. Regards.",
+      "actual": "Account Access",
+      "predicted": "Refund Request"
+    },
+    {
+      "text": "Hey, does the premium plan include priority support. this has been bothering me for a few days. Regards.",
+      "actual": "Account Access",
+      "predicted": "Product Inquiry"
+    },
+    {
+      "text": "Hey, cancel my plan before the next billing cycle. when convenient, thanks. Thank you for your help.",
+      "actual": "Account Access",
+      "predicted": "Cancellation"
+    },
+    {
+      "text": "Hello team, the item was not as described, I would like my money back. when convenient, thanks. Regards.",
+      "actual": "Account Access",
+      "predicted": "Refund Request"
+    },
+    {
+      "text": "the API returns an error and our integration is broken. I have a deadline tomorrow. Regards.",
+      "actual": "Billing",
+      "predicted": "Technical Issue"
+    },
+    {
+      "text": "Hey, I want a refund for the product I bought last week. could someone check this. Please advise.",
+      "actual": "Product Inquiry",
+      "predicted": "Refund Request"
+    },
+    {
+      "text": "Hey, my account was locked after several login attempts. this has been bothering me for a few days. Regards.",
+      "actual": "Product Inquiry",
+      "predicted": "Account Access"
+    },
+    {
+      "text": "To whom it may concern, what is the difference between the basic and pro versions. not urgent, just curious. Please advise.",
+      "actual": "Refund Request",
+      "predicted": "Product Inquiry"
+    },
+    {
+      "text": "there is an unknown charge on my credit card statement. this is blocking my work today. Thank you for your help.",
+      "actual": "Product Inquiry",
+      "predicted": "Billing"
+    },
+    {
+      "text": "Hey, when will the new feature be released. URGENT production is down.",
+      "actual": "Account Access",
+      "predicted": "Product Inquiry"
+    },
+    {
+      "text": "Hello team, is this product compatible with my operating system. not urgent, just curious.",
+      "actual": "Account Access",
+      "predicted": "Product Inquiry"
+    },
+    {
+      "text": "Hello team, the website is extremely slow and pages time out. please respond as soon as possible. Thank you for your help.",
+      "actual": "Account Access",
+      "predicted": "Technical Issue"
+    },
+    {
+      "text": "please refund my order, it arrived damaged. could someone check this. Regards.",
+      "actual": "Cancellation",
+      "predicted": "Refund Request"
+    },
+    {
+      "text": "I was charged twice for my subscription this month. please look into this.",
+      "actual": "Account Access",
+      "predicted": "Billing"
+    },
+    {
+      "text": "Hello team, the payment page keeps failing when I try to update my card. this is a serious problem for our team. Regards.",
+      "actual": "Technical Issue",
+      "predicted": "Billing"
+    },
+    {
+      "text": "Hello team, please refund my order, it arrived damaged. this is a serious problem for our team. Regards.",
+      "actual": "Cancellation",
+      "predicted": "Refund Request"
+    },
+    {
+      "text": "Hi, how do I close my account and delete my data. this is a serious problem for our team. Regards.",
+      "actual": "Technical Issue",
+      "predicted": "Cancellation"
+    },
+    {
+      "text": "Hey, I am switching to another provider and want to terminate my plan. please look into this. Thanks.",
+      "actual": "Billing",
+      "predicted": "Cancellation"
+    },
+    {
+      "text": "To whom it may concern, when will the new feature be released. security breach in progress. Thanks.",
+      "actual": "Refund Request",
+      "predicted": "Product Inquiry"
+    },
+    {
+      "text": "Hello team, I am switching to another provider and want to terminate my plan. this has been bothering me for a few days. Regards.",
+      "actual": "Refund Request",
+      "predicted": "Cancellation"
+    }
+  ],
+  "priority": {
+    "accuracy": 1.0,
+    "labels": [
+      "critical",
+      "high",
+      "low",
+      "medium"
+    ],
+    "confusion_matrix": [
+      [
+        63,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        150,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        177,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        210
+      ]
+    ],
+    "per_class": {
+      "critical": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 63.0
+      },
+      "high": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 150.0
+      },
+      "low": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 177.0
+      },
+      "medium": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 210.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 600.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 600.0
+      }
+    }
+  }
+}
